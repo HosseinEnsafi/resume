@@ -1,0 +1,103 @@
+/*=============== BASE ===============*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  font-family: "IRANSans", "ui-sans-serif", "system-ui", sans-serif;
+  color: #212121;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  line-height: 1.5;
+}
+
+p {
+  text-wrap: pretty;
+  color: #2121219a;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  margin-bottom: 0.5em;
+}
+
+section {
+  padding-block-start: 1.75rem;
+}
+
+/* UTILITIES */
+.container {
+  margin-inline: auto;
+  width: min(100%, 58rem);
+}
+
+/* FONTS */
+@font-face {
+  font-family: "IRANSans";
+  src: url("/fonts/IRANSansXFaNum-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IRANSans";
+  src: url("/fonts/IRANSansXFaNum-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IRANSans";
+  src: url("/fonts/IRANSansXFaNum-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IRANSans";
+  src: url("/fonts/IRANSansXFaNum-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

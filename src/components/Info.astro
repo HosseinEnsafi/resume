@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section class="info section">
+  <div class="info__container container">
+    <div class="profile">
+      <h2>پروفایل</h2>
+      <p>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+        از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+        سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+        متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه
+        درصد گذشته حال و آینده
+      </p>
+    </div>
+    <div class="contacts">
+      <h2>راه های ارتباطی</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <Icon size={22} name={"address"} />
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+        </li>
+        <li class="contacts__item">
+          <Icon size={22} name={"call"} />
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+        </li>
+        <li class="contacts__item">
+          <Icon size={22} name={"compass"} />
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+        </li>
+        <li class="contacts__item">
+          <Icon size={22} name={"mail"} />
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .info__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1.75rem;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .contacts__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .contacts__item svg {
+    color: #121212;
+    opacity: 0.2;
+  }
+</style>

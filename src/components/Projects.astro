@@ -1,0 +1,78 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section class="projects section">
+  <div class="projects__container container">
+    <h2>پروژه‌ها</h2>
+    <div class="projects__list">
+      <!-- First Project -->
+      <div class="projects__item">
+        <time class="projects__time">از سال ۱۴۰۱ تا ۱۴۰۲</time>
+        <div class="projects__info">
+          <h2 class="projects__title">پروژه سایت کتابخوانی</h2>
+          <p class="projects__stack">
+            <Icon name="reactjs" size={24} />
+            <Icon name="ts" size={24} />
+            <Icon name="vite" size={24} />
+            <Icon name="express" size={24} />
+            <Icon name="mongo" size={24} />
+          </p>
+        </div>
+        <div class="projects__description">
+          یک وب‌سایت اجتماعی برای علاقه‌مندان به کتاب، با قابلیت پست کردن، لایک
+          و کامنت.
+        </div>
+      </div>
+      <!-- Second Project -->
+      <div class="projects__item">
+        <time class="projects__time">از سال ۱۴۰۰ تا ۱۴۰۱</time>
+        <div class="projects__info">
+          <h2 class="projects__title">مدل تحویل غذای آنلاین</h2>
+          <div class="projects__stack">
+            <Icon name="nextjs" size={24} />
+            <Icon name="tailwindcss" size={24} />
+            <Icon name="ts" size={24} />
+            <Icon name="prisma" size={24} />
+            <Icon name="postgres" size={24} />
+          </div>
+        </div>
+        <div class="projects__description">
+          سیستمی برای مدیریت رستوران‌ها با یک منوی واحد برای هر رستوران.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects__item {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    color: #121212;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .projects__time {
+  }
+
+  .projects__info {
+  }
+
+  .projects__stack {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .projects__title {
+    font-size: 1.125rem;
+    line-height: 1;
+  }
+
+  .projects__description {
+    flex: 1;
+  }
+</style>
