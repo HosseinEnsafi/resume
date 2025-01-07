@@ -1,0 +1,52 @@
+---
+import Skill from "./Skill.astro";
+---
+
+<section class="skills__section section">
+  <div class="skills__container container">
+    <h2>توانایی ها</h2>
+    <div class="skills">
+      <Skill skillName="JavaScript" skillValue={80} progressColor="#F4D735" />
+      <Skill skillName="CSS" skillValue={70} progressColor="#3B53E1" />
+      <Skill skillName="React" skillValue={90} progressColor="#60d9fb" />
+      <Skill skillName="Typescript" skillValue={75} progressColor="#3275cd" />
+      <Skill skillName="Next.js" skillValue={70} progressColor="#333" />
+      <Skill skillName="Astro" skillValue={70} progressColor="#E15B19" />
+      <Skill skillName="Git" skillValue={50} progressColor="#D3563B" />
+      <Skill skillName="Linux" skillValue={35} progressColor="#E6B22B" />
+      <Skill skillName="Express & Mongodb" skillValue={65} progressColor="#77AD4F" />
+      <Skill skillName="Figma" skillValue={30} progressColor="#79D08A" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    direction: ltr;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .skill label {
+    color: var(--title-clr);
+  }
+
+  .skill .progress-bar {
+    border-radius: 12px;
+    background-color: #eee;
+    width: 100%;
+    height: 1rem;
+    overflow: hidden;
+  }
+
+  .skill .progress-value {
+    border-radius: 12px;
+    background-color: var(--react-clr);
+    height: 100%;
+  }
+</style>

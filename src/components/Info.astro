@@ -7,31 +7,44 @@ import { Icon } from "astro-icon/components";
     <div class="profile">
       <h2>پروفایل</h2>
       <p>
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-        از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-        سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-        متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه
-        درصد گذشته حال و آینده
+        بیش از دو سال است که در زمینه طراحی و پیاده‌سازی برنامه‌های وب فعالیت می‌کنم. در این مدت با
+        استفاده از آخرین فناوری‌ها و ابزارهای موجود، موفق به ایجاد پلتفرم‌های مختلف و کسب نتایج
+        مطلوب شده‌ام. همچنین همواره به دنبال یادگیری و حل چالش‌های فنی هستم. در این مسیر، تجربه‌های
+        ارزشمندی کسب کرده‌ام که به من کمک کرده‌اند تا به توسعه‌دهنده بهتری تبدیل شوم.
       </p>
     </div>
     <div class="contacts">
-      <h2>راه های ارتباطی</h2>
+      <h2>راه‌های ارتباطی</h2>
       <ul class="contacts__list">
         <li class="contacts__item">
-          <Icon size={22} name={"address"} />
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-        </li>
-        <li class="contacts__item">
           <Icon size={22} name={"call"} />
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-        </li>
-        <li class="contacts__item">
-          <Icon size={22} name={"compass"} />
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+          <p>
+            <a href="tel:+989369109017">09369109017</a>
+          </p>
         </li>
         <li class="contacts__item">
           <Icon size={22} name={"mail"} />
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+          <p>
+            <a href="mailto:HosseinEnsafi@outlook.com">HosseinEnsafi@outlook.com</a>
+          </p>
+        </li>
+        <li class="contacts__item">
+          <Icon size={22} name={"github"} />
+          <p>
+            <a target="_blank" href="https://github.com/HosseinEnsafi">HosseinEnsafi</a>
+          </p>
+        </li>
+        <li class="contacts__item">
+          <Icon size={22} name={"telegram"} />
+          <p><a target="_blank" href="https://t.me/mathisfunn">MathIsFunn</a></p>
+        </li>
+        <li class="contacts__item">
+          <Icon size={22} name={"fem"} />
+          <p>
+            <a target="_blank" href="https://www.frontendmentor.io/profile/HosseinEnsafi"
+              >HosseinEnsafi</a
+            >
+          </p>
         </li>
       </ul>
     </div>
@@ -39,15 +52,20 @@ import { Icon } from "astro-icon/components";
 </section>
 
 <style>
+  .info a:any-link {
+    color: var(--text-clr);
+  }
+
   h2 {
     margin-bottom: 0.5em;
   }
 
   .info__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     justify-items: center;
     gap: 1.75rem;
+    text-align: justify;
   }
 
   .contacts__list {
@@ -63,7 +81,7 @@ import { Icon } from "astro-icon/components";
   }
 
   .contacts__item svg {
-    color: #121212;
     opacity: 0.2;
+    color: #121212;
   }
 </style>

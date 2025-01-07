@@ -1,3 +1,20 @@
+/* VARIABLES */
+:root {
+  /*========== Colors ==========*/
+  --body-clr: hsl(0, 0%, 100%);
+  --text-clr: hsla(0, 0%, 12%, 0.6);
+  --title-clr: hsla(0, 0%, 12%);
+  --bg-header: hsl(0, 0%, 7%);
+
+  /*========== Typography ==========*/
+  --body-font: "IRANSans", "ui-sans-serif", "system-ui", sans-serif;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
 /*=============== BASE ===============*/
 *,
 *::before,
@@ -13,8 +30,9 @@
 body {
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
-  font-family: "IRANSans", "ui-sans-serif", "system-ui", sans-serif;
-  color: #212121;
+  background-color: var(--body-clr);
+  color: var(--text-clr);
+  font-family: var(--body-font);
 }
 
 img,
@@ -48,13 +66,13 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
   line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 p {
-  text-wrap: pretty;
   color: #2121219a;
+  text-wrap: pretty;
 }
 h1,
 h2,
@@ -62,12 +80,17 @@ h3,
 h4,
 h5,
 h6 {
-  text-wrap: balance;
   margin-bottom: 0.5em;
+  color: var(--title-clr);
+  text-wrap: balance;
 }
 
 section {
-  padding-block-start: 1.75rem;
+  padding-block-start: 2.25rem;
+}
+
+section:last-child {
+  padding-block-end: 2rem;
 }
 
 /* UTILITIES */
@@ -78,26 +101,26 @@ section {
 
 /* FONTS */
 @font-face {
-  font-family: "IRANSans";
-  src: url("/fonts/IRANSansXFaNum-Regular.ttf") format("truetype");
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
+  src: url("/fonts/IRANSansXFaNum-Regular.ttf") format("truetype");
+  font-family: "IRANSans";
 }
 @font-face {
-  font-family: "IRANSans";
-  src: url("/fonts/IRANSansXFaNum-Medium.ttf") format("truetype");
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
+  src: url("/fonts/IRANSansXFaNum-Medium.ttf") format("truetype");
+  font-family: "IRANSans";
 }
 @font-face {
-  font-family: "IRANSans";
-  src: url("/fonts/IRANSansXFaNum-DemiBold.ttf") format("truetype");
+  font-style: normal;
   font-weight: 600;
-  font-style: normal;
+  src: url("/fonts/IRANSansXFaNum-DemiBold.ttf") format("truetype");
+  font-family: "IRANSans";
 }
 @font-face {
-  font-family: "IRANSans";
-  src: url("/fonts/IRANSansXFaNum-Bold.ttf") format("truetype");
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/IRANSansXFaNum-Bold.ttf") format("truetype");
+  font-family: "IRANSans";
 }

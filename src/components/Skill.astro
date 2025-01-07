@@ -1,0 +1,55 @@
+---
+interface Props {
+  skillName: string;
+  skillValue: number;
+  progressColor: string;
+}
+
+const { skillName, skillValue, progressColor } = Astro.props;
+---
+
+<div class="skill">
+  <div class="skill__header">
+    <label for={skillName}>{skillName}</label>
+    <span>{skillValue}</span>
+  </div>
+  <div id={skillName} role="progressbar" class="progress-bar">
+    <div
+      class="progress-value"
+      style={`width: ${skillValue}%; background-color:${progressColor}`}
+    >
+    </div>
+  </div>
+</div>
+
+<style>
+  .skill {
+    width: 100%;
+  }
+
+  .skill__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .skill label {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--title-clr);
+  }
+
+  .skill .progress-bar {
+    border-radius: 12px;
+    background-color: #eee;
+    width: 100%;
+    height: 0.5rem;
+    overflow: hidden;
+  }
+
+  .skill .progress-value {
+    border-radius: 12px;
+    background-color: var(${progressColor});
+    height: 100%;
+  }
+</style>

@@ -8,71 +8,162 @@ import { Icon } from "astro-icon/components";
     <div class="projects__list">
       <!-- First Project -->
       <div class="projects__item">
-        <time class="projects__time">از سال ۱۴۰۱ تا ۱۴۰۲</time>
+        <time class="projects__time">آبان 1403</time>
         <div class="projects__info">
-          <h2 class="projects__title">پروژه سایت کتابخوانی</h2>
+          <h2 class="projects__title">
+            وب اپلیکشین بازاریابی سفیران تپسی
+            <a target="_blank" href="https://totapsi.ir"> (توتپسی)</a>
+          </h2>
           <p class="projects__stack">
-            <Icon name="reactjs" size={24} />
-            <Icon name="ts" size={24} />
-            <Icon name="vite" size={24} />
-            <Icon name="express" size={24} />
-            <Icon name="mongo" size={24} />
+            <a href="https://react.dev/" target="_blank" aria-label="react">
+              <Icon name="reactjs" size={24} />
+            </a>
+            <a
+              href="https://typescriptlang.org"
+              target="_blank"
+              aria-label="typescript"
+            >
+              <Icon name="ts" size={24} />
+            </a>
+            <a
+              href="https://tailwindcss.com"
+              target="_blank"
+              aria-label="tailwindcss"
+            >
+              <Icon name="tailwindcss" size={24} />
+            </a>
+            <a
+              href="https://redux-toolkit.js.org/"
+              target="_blank"
+              aria-label="redux"
+            >
+              <Icon name="redux" size={24} />
+            </a>
+            <a
+              href="https://expressjs.com"
+              target="_blank"
+              aria-label="express"
+            >
+              <Icon name="express" size={24} />
+            </a>
+            <a href="https://mongodb.com" target="_blank" aria-label="mongodb">
+              <Icon name="mongo" size={24} />
+            </a>
           </p>
         </div>
-        <div class="projects__description">
-          یک وب‌سایت اجتماعی برای علاقه‌مندان به کتاب، با قابلیت پست کردن، لایک
-          و کامنت.
-        </div>
+        <p class="projects__description">
+          با هدف تسهیل ثبت‌نام سفیران موتور تپسی و ایجاد بستری برای فعالیت‌های
+          بازاریابی، این پروژه با MERN Stack توسعه یافت. مسئولیت طراحی رابط
+          کاربری، پیاده‌سازی API‌ها و مدیریت دیتابیس را بر عهده داشتم. با
+          بهینه‌سازی عملکرد و بهبود UX، نرخ ثبت‌نام افزایش یافت و یک پلتفرم
+          کاربرپسند و مقیاس‌پذیر ایجاد شد.
+        </p>
       </div>
       <!-- Second Project -->
       <div class="projects__item">
-        <time class="projects__time">از سال ۱۴۰۰ تا ۱۴۰۱</time>
+        <time class="projects__time">دی 1403</time>
         <div class="projects__info">
-          <h2 class="projects__title">مدل تحویل غذای آنلاین</h2>
+          <h2 class="projects__title">
+            پلتفرم پیام رسان
+            <a target="_blank" href="https://github.com/HosseinEnsafi/hamketabi"
+              >همکتابی</a
+            >
+          </h2>
           <div class="projects__stack">
-            <Icon name="nextjs" size={24} />
-            <Icon name="tailwindcss" size={24} />
-            <Icon name="ts" size={24} />
-            <Icon name="prisma" size={24} />
-            <Icon name="postgres" size={24} />
+            <a href="https://nextjs.org" target="_blank" aria-label="nextjs">
+              <Icon name="nextjs" size={24} />
+            </a>
+            <a href="https://react.dev/" target="_blank" aria-label="react">
+              <Icon name="reactjs" size={24} />
+            </a>
+            <a
+              href="https://typescriptlang.org"
+              target="_blank"
+              aria-label="typescript"
+            >
+              <Icon name="ts" size={24} />
+            </a>
+            <a
+              href="https://tailwindcss.com"
+              target="_blank"
+              aria-label="tailwindcss"
+            >
+              <Icon name="tailwindcss" size={24} />
+            </a>
+            <a href="https://prisma.io" target="_blank" aria-label="prisma">
+              <Icon name="prisma" size={24} />
+            </a>
+            <a
+              href="https://postgresql.org"
+              target="_blank"
+              aria-label="postgresql"
+            >
+              <Icon name="postgres" size={24} />
+            </a>
           </div>
         </div>
-        <div class="projects__description">
-          سیستمی برای مدیریت رستوران‌ها با یک منوی واحد برای هر رستوران.
-        </div>
+        <p class="projects__description">
+          وب‌اپلیکیشن همکتابی، یک پلتفرم پیام‌رسانی متن‌باز برای علاقه‌مندان به
+          کتاب و کتابخوانی است. این پروژه با هدف ایجاد یک جایگزین اوپن‌سورس برای
+          پلتفرم‌های مشابه مانند <a
+            href="https://behkhan.ir"
+            aria-label="behkhan">بهخوان</a
+          > توسعه یافته است. اگرچه بخش‌های اصلی پروژه تکمیل شده، همچنان در حال توسعه
+          و بهبود می‌باش
+        </p>
       </div>
     </div>
   </div>
 </section>
 
 <style>
+  .projects__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
   .projects__item {
     display: flex;
-    width: 100%;
-    gap: 1.5rem;
-    color: #121212;
-    margin-bottom: 20px;
-    padding: 10px;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 1rem;
   }
 
   .projects__time {
+    color: #666;
+    font-size: 0.875rem;
   }
 
   .projects__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .projects__stack {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .projects__stack a {
+    color: inherit; /* برای حفظ رنگ آیکون‌ها */
+    text-decoration: none; /* حذف زیرخط لینک‌ها */
   }
 
   .projects__title {
+    color: #121212;
     font-size: 1.125rem;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .projects__description {
-    flex: 1;
+    color: #444;
+    font-size: 0.875rem;
+    line-height: 1.5;
   }
 </style>
