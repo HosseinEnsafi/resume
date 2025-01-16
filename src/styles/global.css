@@ -96,7 +96,18 @@ section:last-child {
 /* UTILITIES */
 .container {
   margin-inline: auto;
+  padding-inline: 0.75rem;
   width: min(100%, 58rem);
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 58em) {
+  .container {
+    padding-inline: 0;
+  }
 }
 
 /* FONTS */

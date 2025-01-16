@@ -76,7 +76,7 @@ import { Icon } from "astro-icon/components";
           است. این پروژه با هدف ایجاد یک جایگزین اوپن‌سورس برای پلتفرم‌های مشابه مانند <a
             href="https://behkhan.ir"
             aria-label="behkhan">بهخوان</a
-          > توسعه یافته است. اگرچه بخش‌های اصلی پروژه تکمیل شده، همچنان در حال توسعه و بهبود می‌باش
+          > توسعه یافته است. اگرچه بخش‌های اصلی پروژه تکمیل شده، همچنان در حال توسعه و بهبود می باشد
         </p>
       </div>
     </div>
@@ -86,8 +86,14 @@ import { Icon } from "astro-icon/components";
 <style>
   .projects__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .projects__list {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .projects__item {
